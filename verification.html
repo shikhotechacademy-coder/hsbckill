@@ -5,23 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aadhar Verification</title>
-    <style>   
+     <style>
         :root {
             --amex-blue: #0070d5;
             --text-purple: #4d2f7d;
             --light-gray: #f4f4f4;
             --border: #d5d5d5;
         }
-
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            /* Base font size increase */
             font-size: 16px; 
         }
-
         /* Header Navigation */
         nav {
             display: flex;
@@ -30,56 +27,46 @@
             padding: 15px 5%;
             border-bottom: 1px solid #eee;
         }
-
         .nav-left {
             display: flex;
             align-items: center;
             gap: 20px;
         }
 
-        .amex-logo {
-            background: var(--amex-blue);
-            color: white;
-            padding: 8px 12px;
-            font-weight: bold;
-            font-size: 12px;
-            letter-spacing: 1px;
-            text-align: center;
-            line-height: 1.1;
-            text-transform: uppercase;
+        /* UPDATED LOGO STYLE */
+        .logo-img {
+            height: 35px; /* Adjust height as needed */
+            width: auto;
+            display: block;
         }
 
         .nav-links {
             display: flex;
             gap: 20px;
-            font-size: 15px; /* Increased from 13px */
+            font-size: 15px;
             color: var(--amex-blue);
             font-weight: 500;
         }
-
         .nav-links a {
             text-decoration: none;
             color: var(--amex-blue);
         }
-
         .nav-right {
             display: flex;
             align-items: center;
             gap: 25px;
-            font-size: 15px; /* Increased from 13px */
+            font-size: 15px;
         }
-
         .login-btn {
             background: var(--amex-blue);
             color: white;
             border: none;
-            padding: 10px 22px; /* Larger button */
+            padding: 10px 22px;
             border-radius: 3px;
             cursor: pointer;
             font-size: 15px;
             font-weight: bold;
         }
-
         /* Main Center Container */
         .main-wrapper {
             max-width: 1200px;
@@ -87,73 +74,63 @@
             padding: 60px 20px;
             text-align: center;
         }
-
         .header-text {
             margin-bottom: 40px;
         }
-
         h1 {
             color: var(--text-purple);
-            font-size: 28px; /* Increased from 20px */
+            font-size: 28px;
             text-transform: uppercase;
             margin: 0;
             letter-spacing: 0.5px;
         }
-
         .sub-header {
-            font-size: 16px; /* Increased from 12px */
+            font-size: 16px;
             color: #555;
             margin-top: 10px;
         }
-
         /* Centering the Form Elements */
         .form-container {
             max-width: 500px; 
             margin: 0 auto;   
             text-align: left;
         }
-
         .form-container label {
             display: block;
             color: var(--text-purple);
-            font-size: 22px; /* Bold prominent label */
+            font-size: 22px;
             font-weight: bold;
             margin-bottom: 20px;
         }
-
         input[type="text"] {
             width: 100%;
-            padding: 16px; /* Increased padding */
+            padding: 16px;
             border: 1px solid var(--border);
             background: var(--light-gray);
             box-sizing: border-box; 
-            font-size: 18px; /* Larger text entry */
+            font-size: 18px;
             margin-bottom: 20px;
         }
-
         .submit-btn {
             width: 100%;
             padding: 15px;
             background: #efefef;
             border: 1px solid var(--border);
             color: #333;
-            font-size: 18px; /* Increased font */
+            font-size: 18px;
             font-weight: bold;
             cursor: pointer;
             transition: 0.2s;
         }
-
         .submit-btn:hover {
             background: #e0e0e0;
         }
-
         /* Footer */
         footer {
             margin-top: 80px;
             border-top: 1px solid #eee;
             padding: 50px 5% 30px;
         }
-
         .footer-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -161,40 +138,33 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-
         .footer-col h4 {
-            font-size: 14px; /* Increased font */
+            font-size: 14px;
             text-transform: uppercase;
             color: #000;
             margin-bottom: 20px;
             font-weight: bold;
         }
-
         .footer-col ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-
         .footer-col li {
             margin-bottom: 12px;
         }
-
         .footer-col a {
             text-decoration: none;
             color: var(--amex-blue);
-            font-size: 14px; /* Increased font */
+            font-size: 14px;
         }
-
         .copyright-section {
             max-width: 1200px;
             margin: 50px auto 0;
-            font-size: 13px; /* Increased font */
+            font-size: 13px;
             color: #777;
             text-align: left;
         }
-
-        /* Mobile Fixes */
         @media (max-width: 768px) {
             .nav-links, .nav-right span, .nav-right i { display: none; }
             .main-wrapper { padding: 40px 15px; }
@@ -207,8 +177,8 @@
 
 <nav>
     <div class="nav-left">
-     <img src="amex.jpg" alt="HSBC Logo" class="logo-img">
-          
+        <img src="amex.jpg" alt="HSBC Logo" class="logo-img">
+        
         <div class="nav-links">
             <a href="#">My Account</a>
             <a href="#">Cards</a>
